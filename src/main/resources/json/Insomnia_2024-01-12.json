@@ -1,0 +1,289 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-01-12T11:14:22.614Z",
+  "__export_source": "insomnia.desktop.app:v6.4.0",
+  "resources": [
+    {
+      "_id": "req_8434ae204c0847a58bcb15125d42f65e",
+      "authentication": {
+        "disabled": false,
+        "password": "password",
+        "type": "basic",
+        "username": "user"
+      },
+      "body": {},
+      "created": 1704979209774,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1700751828755,
+      "method": "GET",
+      "modified": 1705057712567,
+      "name": "getCarById",
+      "parameters": [],
+      "parentId": "fld_1f96f4c3bd3849188bfff7b8dee39472",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "localhost:8080/api/car/32",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_1f96f4c3bd3849188bfff7b8dee39472",
+      "created": 1704965389494,
+      "description": "",
+      "environment": {},
+      "metaSortKey": -1700564754170,
+      "modified": 1704965406519,
+      "name": "CAR DEMO",
+      "parentId": "wrk_e7bb4400354f4785a448b461cef9a8ee",
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_e7bb4400354f4785a448b461cef9a8ee",
+      "created": 1542172316642,
+      "description": "",
+      "modified": 1542172316642,
+      "name": "Insomnia",
+      "parentId": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_64d39e2e8be54827b734de90610d1ff7",
+      "authentication": {
+        "disabled": false,
+        "password": "password",
+        "type": "basic",
+        "username": "user"
+      },
+      "body": {},
+      "created": 1704965389502,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1700751828705,
+      "method": "GET",
+      "modified": 1704979459010,
+      "name": "getAllCars",
+      "parameters": [],
+      "parentId": "fld_1f96f4c3bd3849188bfff7b8dee39472",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "localhost:8080/api/car/",
+      "_type": "request"
+    },
+    {
+      "_id": "req_46c08aa270384340a464340ec7608f57",
+      "authentication": {
+        "disabled": false,
+        "password": "password",
+        "type": "basic",
+        "username": "user"
+      },
+      "body": {},
+      "created": 1704965418073,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1700355433707.5,
+      "method": "GET",
+      "modified": 1705057725884,
+      "name": "loadCsvFile",
+      "parameters": [],
+      "parentId": "fld_1f96f4c3bd3849188bfff7b8dee39472",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "localhost:8080/api/car/loadCsvFile",
+      "_type": "request"
+    },
+    {
+      "_id": "req_1f6a700df7eb4c208918f3cf60a278f7",
+      "authentication": {
+        "disabled": false,
+        "password": "password",
+        "type": "basic",
+        "username": "user"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{ \n      \"powerType\":\"D\",\n      \"isAutomatic\": \"true\"\n}"
+      },
+      "created": 1704981700751,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_4c57c6cd7829421ab2b2121dc32cacd7",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1699562643712.5,
+      "method": "POST",
+      "modified": 1705057892999,
+      "name": "getAge_0_1_and_Automatic",
+      "parameters": [],
+      "parentId": "fld_1f96f4c3bd3849188bfff7b8dee39472",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "localhost:8080/api/car/queryFilter",
+      "_type": "request"
+    },
+    {
+      "_id": "req_3ecb4568dd66453d894ef2a3e829bd07",
+      "authentication": {
+        "disabled": false,
+        "password": "password",
+        "type": "basic",
+        "username": "user"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{ \n      \"ageType\":\"4\",\n      \"powerType\": \"D\"\n}"
+      },
+      "created": 1704984237521,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_4c57c6cd7829421ab2b2121dc32cacd7",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1699364446213.75,
+      "method": "POST",
+      "modified": 1705057879081,
+      "name": "getOlderDiesel",
+      "parameters": [],
+      "parentId": "fld_1f96f4c3bd3849188bfff7b8dee39472",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "localhost:8080/api/car/queryFilter",
+      "_type": "request"
+    },
+    {
+      "_id": "req_7c66c9799fb64f58879b99ca386918f2",
+      "authentication": {
+        "disabled": false,
+        "password": "password",
+        "type": "basic",
+        "username": "user"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{ \n      \"priceType\":\"2\",\n      \"ageType\": \"3\",\n      \"isAutomatic\": \"true\"\n}"
+      },
+      "created": 1704984239788,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_4c57c6cd7829421ab2b2121dc32cacd7",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1699265347464.375,
+      "method": "POST",
+      "modified": 1705057981621,
+      "name": "getAge_3_5_and_Automatic_and_price_5_10",
+      "parameters": [],
+      "parentId": "fld_1f96f4c3bd3849188bfff7b8dee39472",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "localhost:8080/api/car/queryFilter",
+      "_type": "request"
+    },
+    {
+      "_id": "env_998ec9d78e424fb2a79200917360c891",
+      "color": null,
+      "created": 1542172316670,
+      "data": {},
+      "isPrivate": false,
+      "metaSortKey": 1542172316670,
+      "modified": 1542172316670,
+      "name": "New Environment",
+      "parentId": "wrk_e7bb4400354f4785a448b461cef9a8ee",
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_220e4895902645b2bcadf1aee9c62182",
+      "cookies": [
+        {
+          "creation": "2020-05-18T19:20:22.726Z",
+          "domain": "localhost",
+          "hostOnly": true,
+          "httpOnly": true,
+          "id": "8094263647261941",
+          "key": "JSESSIONID",
+          "lastAccessed": "2024-01-12T09:05:46.016Z",
+          "path": "/",
+          "value": "2A42C2B93427C26C933F345A34F983B7"
+        },
+        {
+          "creation": "2022-03-07T10:50:01.437Z",
+          "domain": "localhost",
+          "hostOnly": true,
+          "httpOnly": true,
+          "id": "10460644221707827",
+          "key": "JSESSIONID",
+          "lastAccessed": "2022-03-07T11:38:23.363Z",
+          "path": "/spot/",
+          "value": "553186BAEF4E7F4EB47616AAC829F87F"
+        },
+        {
+          "creation": "2022-03-07T11:58:14.508Z",
+          "domain": "localhost",
+          "hostOnly": true,
+          "httpOnly": true,
+          "id": "37238051988966814",
+          "key": "JSESSIONID",
+          "lastAccessed": "2022-03-07T11:58:14.508Z",
+          "path": "/spot",
+          "value": "BA5C888D1AFCFC8E75939149B5FD4511"
+        },
+        {
+          "creation": "2022-06-15T14:35:48.508Z",
+          "domain": "localhost",
+          "hostOnly": true,
+          "httpOnly": true,
+          "id": "08351098643609167",
+          "key": "JSESSIONID",
+          "lastAccessed": "2022-10-24T07:14:38.727Z",
+          "path": "/siulwa",
+          "value": "CC9155B40BC1C02596521734D3A05F46"
+        }
+      ],
+      "created": 1542172316671,
+      "modified": 1705050346016,
+      "name": "Default Jar",
+      "parentId": "wrk_e7bb4400354f4785a448b461cef9a8ee",
+      "_type": "cookie_jar"
+    }
+  ]
+}
